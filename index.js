@@ -8,7 +8,7 @@ return `This Monday, I will ${activity}.`;
 }
 
 function wrapAdjective(emphatic = '*') {
-    const innerFunction = function (adj) {
+    const innerFunction = function (adj = 'special') {
         return `You are ${emphatic}${adj}${emphatic}!`
     };
     return innerFunction;
